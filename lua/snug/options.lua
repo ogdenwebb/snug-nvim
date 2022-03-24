@@ -31,8 +31,9 @@ opt.autoread = true                 -- auto-reload file after changes
 
 opt.clipboard = 'unnamedplus' -- Enable system clipboard
 
--- disable shada
-opt.shadafile = "NONE"
+-- Folding
+opt.foldmethod = 'manual'
+opt.foldenable = false
 
 -- disable builtins plugins
 local disabled_built_ins = {
@@ -63,3 +64,5 @@ end
 -- Disable nvim intro
 opt.shortmess:append "sI"
 
+-- Enable undo history
+opt.undofile = true
